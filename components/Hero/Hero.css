@@ -1,0 +1,38 @@
+.hero{
+  display: flex;
+  gap: 80px;
+  padding: 30px 100px;
+}
+
+.hero .text-section{
+  flex: 3;
+  margin: auto 0;
+  /* padding-right: 150px; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero .text-section h2{
+  font-size: 44px;
+  color: var(--dark);
+}
+
+.hero .text-section p{
+  font-size: 16px;
+  /* color: var(--dark); */
+}
+
+.hero .text-section button{
+  outline: none;
+  border: none;
+  background: var(--primary);
+  color: white;
+  padding: 10px 30px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.hero .image-section{
+  flex: 2;
+}
