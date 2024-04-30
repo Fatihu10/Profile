@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Header.css'
 import { MdMenu } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -12,14 +13,14 @@ const Header = () => {
 
   return (
     <div className='header'>
-      <div className="logo">REACT CLASS</div>
+      <Link to='/'><div className="logo">REACT CLASS</div></Link>
       <ul className={`${isOpen ? 'toggleOpen' : 'toggleClose'}`}>
         <div onClick={handleNav} className='close'>
           <IoMdClose size={25} />
         </div>
-        <li>Works</li>
-        <li>Blog</li>
-        <li>Contact</li>
+        <Link to='/blog'>Blog</Link>
+        <Link to='/works'>Works</Link>
+        <Link to='/contact'>Contact</Link>
       </ul>
       <div onClick={handleNav} className="menu">
         <MdMenu size={25} />

@@ -1,0 +1,26 @@
+.blog-card{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--dark);
+  margin-bottom: 30px;
+}
+
+.title{
+  color: var(--dark);
+  font-size: 30px;
+}
+
+.date{
+  display: flex;
+  gap: 5px;
+  font-size: 20px;
+}
+
+.date .express{
+  color: var(--light);
+}
+
+.blog-body{
+  font-size: 16px;
+}

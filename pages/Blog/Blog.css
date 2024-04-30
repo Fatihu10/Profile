@@ -1,0 +1,14 @@
+.blog{
+  padding: 50px 150px;
+
+}
+
+.title{
+  font-size: 44px;
+  font-weight: bold;
+  color: var(--dark);
+}
+
+.blog-container{
+  padding: 20px 0;
+}
